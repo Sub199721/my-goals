@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(72, 163, 0, 0.07);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.main-heading {
+    text-align: center;
+    color: #48a300;
+    font-size: 54px;
+}
+.main-heading span{
+    color: #61481c;
+}
+.app-container {
+    background-color: #fbfbfb;
+    width: 660px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+    padding: 32px 48px;
+    
+    
+}
+.app-container .container-heading{
+    
+    font-size: 34px;
+}
+.container-heading .container-logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.progress-label {
+   color: #858585;
+   font-size: 14px;
+}
+.custom-progressbar{
+    background-color: rgba(72, 163, 0, 0.1);
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.custom-progressbar .progress-value{
+    
+    height: 100%;
+    border-radius: 15px;
+    background-color: #48a300;
+
+    width: 0%;
+    color: #eeffe0;
+    display: flex;
+    align-items: center;
+   
+    
+    
+    font-weight: 500;
+    font-size: 15px;
+    
+    
+    transition: width 0.2s ease-in-out;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    
+    
+
+} 
+.custom-progressbar .progress-value span{
+    padding-left: 20px;
+    min-width: max-content;
+
+}
+
+
+.error-messege{
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    top: 18px;
+    
+    display: none;    
+}
+.error .error-messege{
+    display: block;
+}
+.goal-container{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 82px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+.goal-checkbox{
+    height: 24px;
+    width: 25px;
+    border: 2px solid rgba(97, 72, 28, 0.3);
+    border-radius: 50%;
+    flex-shrink: 0;
+    
+}
+.completed .goal-checkbox{
+    border-color: #48a300;
+    background-color: #48a300;
+}
+.goal-checkbox img{
+    width: 100%;
+    
+    display: none;
+    
+}
+.completed .goal-checkbox img{
+    display: block;
+    
+}
+
+.goal-input{
+    outline: none;
+    border: none;
+    align-self: stretch;
+    width: 100%;
+    font-size: 16px;
+    font-family: inherit;
+    margin-left: 10px;
+}
+.completed .goal-input{
+    text-decoration: line-through;
+    color: #48a300;
+}
+.goal-input::placeholder{
+    color: #d9d9d9;
+}
+.quote{
+    font-weight: 800;
+    text-align: center;
+}
+.love{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.made-with{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    color: #858585;
+    margin-top: 64px;
+
+}
+
+@media screen and (max-width:768px){
+    .main-heading{
+        font-size: 32px;
+    }
+    
+    .app-container{
+        margin: 12px auto;
+        width: 400px;
+    }
+    .goal-container{
+        height: 55px;
+        margin-bottom: 24px;
+    }
+    .goal-checkbox{
+        height: 18px;
+        width: 18px;
+        
+        border-radius: 50%;
+        
+        
+    }
+    .custom-progressbar{
+        
+        height: 20px;
+        border-radius: 13px;
+        
+        margin-bottom: 35px;
+    }
+    .custom-progressbar .progress-value{
+        background-color: #48a300;
+        height: 100%;
+        border-radius: 13px;
+        font-size: 12px;
+        font-weight: 400;
+        
+        
+    
+    } 
+    .custom-progressbar .progress-value span{
+        padding-left: 15px;
+    
+    }
+
+    .goal-input{
+        
+        
+        font-size: 13px;
+        font-weight: 700;
+        
+        margin-left: 8px;
+    }
+    .error-messege{
+        
+        font-size: 13px;
+        position: absolute;
+        top: 14px;
+        
+       
+    }
+    
+}
+    
